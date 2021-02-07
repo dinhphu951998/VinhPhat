@@ -29,21 +29,212 @@
     <!-- We copy the entire \App_Data directory. But we ignore JSON files and data protection keys  -->
     <Content Include="App_Data\**" CopyToPublishDirectory="PreserveNewest" Exclude="App_Data\*.json" />
     <Content Remove="App_Data\*.json" />
+    <Content Remove="Plugins\ExchangeRate.EcbExchange\**" />
+    <Content Remove="Plugins\Misc.SendinBlue\**" />
+    <Content Remove="Plugins\Payments.CheckMoneyOrder\**" />
+    <Content Remove="Plugins\Payments.Manual\**" />
+    <Content Remove="Plugins\Payments.PayPalSmartPaymentButtons\**" />
+    <Content Remove="Plugins\Payments.PayPalStandard\**" />
+    <Content Remove="Plugins\Pickup.PickupInStore\**" />
+    <Content Remove="Plugins\Shipping.FixedByWeightByTotal\**" />
+    <Content Remove="Plugins\Shipping.ShipStation\**" />
+    <Content Remove="Plugins\Shipping.UPS\**" />
+    <Content Remove="Plugins\Tax.Avalara\**" />
+    <Content Remove="Plugins\Tax.FixedOrByCountryStateZip\**" />
     <Content Update="App_Data\DataProtectionKeys\*.xml" CopyToPublishDirectory="Never" />
 
     <Compile Remove="Plugins\**;Themes\**" />
+
+    <Compile Remove="Plugins\ExchangeRate.EcbExchange\**" />
+
+    <Compile Remove="Plugins\Misc.SendinBlue\**" />
+
+    <Compile Remove="Plugins\Payments.CheckMoneyOrder\**" />
+
+    <Compile Remove="Plugins\Payments.Manual\**" />
+
+    <Compile Remove="Plugins\Payments.PayPalSmartPaymentButtons\**" />
+
+    <Compile Remove="Plugins\Payments.PayPalStandard\**" />
+
+    <Compile Remove="Plugins\Pickup.PickupInStore\**" />
+
+    <Compile Remove="Plugins\Shipping.FixedByWeightByTotal\**" />
+
+    <Compile Remove="Plugins\Shipping.ShipStation\**" />
+
+    <Compile Remove="Plugins\Shipping.UPS\**" />
+
+    <Compile Remove="Plugins\Tax.Avalara\**" />
+
+    <Compile Remove="Plugins\Tax.FixedOrByCountryStateZip\**" />
     <Content Remove="Plugins\**;Themes\**" />
     <EmbeddedResource Remove="Plugins\**;Themes\**" />
+    <EmbeddedResource Remove="Plugins\ExchangeRate.EcbExchange\**" />
+    <EmbeddedResource Remove="Plugins\Misc.SendinBlue\**" />
+    <EmbeddedResource Remove="Plugins\Payments.CheckMoneyOrder\**" />
+    <EmbeddedResource Remove="Plugins\Payments.Manual\**" />
+    <EmbeddedResource Remove="Plugins\Payments.PayPalSmartPaymentButtons\**" />
+    <EmbeddedResource Remove="Plugins\Payments.PayPalStandard\**" />
+    <EmbeddedResource Remove="Plugins\Pickup.PickupInStore\**" />
+    <EmbeddedResource Remove="Plugins\Shipping.FixedByWeightByTotal\**" />
+    <EmbeddedResource Remove="Plugins\Shipping.ShipStation\**" />
+    <EmbeddedResource Remove="Plugins\Shipping.UPS\**" />
+    <EmbeddedResource Remove="Plugins\Tax.Avalara\**" />
+    <EmbeddedResource Remove="Plugins\Tax.FixedOrByCountryStateZip\**" />
     <None Remove="Plugins\**;Themes\**" />
+    <None Remove="Plugins\ExchangeRate.EcbExchange\**" />
+    <None Remove="Plugins\Misc.SendinBlue\**" />
+    <None Remove="Plugins\Payments.CheckMoneyOrder\**" />
+    <None Remove="Plugins\Payments.Manual\**" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\**" />
+    <None Remove="Plugins\Payments.PayPalStandard\**" />
+    <None Remove="Plugins\Pickup.PickupInStore\**" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\**" />
+    <None Remove="Plugins\Shipping.ShipStation\**" />
+    <None Remove="Plugins\Shipping.UPS\**" />
+    <None Remove="Plugins\Tax.Avalara\**" />
+    <None Remove="Plugins\Tax.FixedOrByCountryStateZip\**" />
 
-    <Content Include="Plugins\bin\placeholder.txt" CopyToPublishDirectory="PreserveNewest"/>
-    <None Include="Plugins\**"  CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="Plugins\bin\placeholder.txt" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="Plugins\**" CopyToPublishDirectory="PreserveNewest" />
 
     <Content Include="Themes\**" CopyToPublishDirectory="PreserveNewest" Exclude="Themes\**\*.config;Themes\**\*.cshtml;Themes\**\*.json" />
-    <None Include="Themes\**"  CopyToPublishDirectory="PreserveNewest" />
+    <None Include="Themes\**" CopyToPublishDirectory="PreserveNewest" />
 
     <!-- We copy the \Logs directory -->
     <Content Include="Logs\**" CopyToPublishDirectory="PreserveNewest" />
+    <None Remove="Plugins\ExchangeRate.EcbExchange\logo.jpg" />
+    <None Remove="Plugins\ExchangeRate.EcbExchange\Nop.Plugin.ExchangeRate.EcbExchange.deps.json" />
+    <None Remove="Plugins\ExchangeRate.EcbExchange\Nop.Plugin.ExchangeRate.EcbExchange.dll" />
+    <None Remove="Plugins\ExchangeRate.EcbExchange\Nop.Plugin.ExchangeRate.EcbExchange.pdb" />
+    <None Remove="Plugins\ExchangeRate.EcbExchange\plugin.json" />
+    <None Remove="Plugins\Misc.SendinBlue\Content\styles.css" />
+    <None Remove="Plugins\Misc.SendinBlue\logo.png" />
+    <None Remove="Plugins\Misc.SendinBlue\Nop.Plugin.Misc.SendinBlue.deps.json" />
+    <None Remove="Plugins\Misc.SendinBlue\Nop.Plugin.Misc.SendinBlue.dll" />
+    <None Remove="Plugins\Misc.SendinBlue\Nop.Plugin.Misc.SendinBlue.pdb" />
+    <None Remove="Plugins\Misc.SendinBlue\plugin.json" />
+    <None Remove="Plugins\Misc.SendinBlue\RestSharp.dll" />
+    <None Remove="Plugins\Misc.SendinBlue\SendinBlue.ClientV3.45.dll" />
+    <None Remove="Plugins\Misc.SendinBlue\SendinBlueMarketingAutomation.dll" />
+    <None Remove="Plugins\Misc.SendinBlue\Views\Configure.cshtml" />
+    <None Remove="Plugins\Misc.SendinBlue\Views\PublicInfo.cshtml" />
+    <None Remove="Plugins\Misc.SendinBlue\Views\_ViewImports.cshtml" />
+    <None Remove="Plugins\Payments.CheckMoneyOrder\logo.jpg" />
+    <None Remove="Plugins\Payments.CheckMoneyOrder\Nop.Plugin.Payments.CheckMoneyOrder.deps.json" />
+    <None Remove="Plugins\Payments.CheckMoneyOrder\Nop.Plugin.Payments.CheckMoneyOrder.dll" />
+    <None Remove="Plugins\Payments.CheckMoneyOrder\Nop.Plugin.Payments.CheckMoneyOrder.pdb" />
+    <None Remove="Plugins\Payments.CheckMoneyOrder\plugin.json" />
+    <None Remove="Plugins\Payments.CheckMoneyOrder\Views\Configure.cshtml" />
+    <None Remove="Plugins\Payments.CheckMoneyOrder\Views\PaymentInfo.cshtml" />
+    <None Remove="Plugins\Payments.CheckMoneyOrder\Views\_ViewImports.cshtml" />
+    <None Remove="Plugins\Payments.Manual\logo.jpg" />
+    <None Remove="Plugins\Payments.Manual\Nop.Plugin.Payments.Manual.deps.json" />
+    <None Remove="Plugins\Payments.Manual\Nop.Plugin.Payments.Manual.dll" />
+    <None Remove="Plugins\Payments.Manual\Nop.Plugin.Payments.Manual.pdb" />
+    <None Remove="Plugins\Payments.Manual\plugin.json" />
+    <None Remove="Plugins\Payments.Manual\Views\Configure.cshtml" />
+    <None Remove="Plugins\Payments.Manual\Views\PaymentInfo.cshtml" />
+    <None Remove="Plugins\Payments.Manual\Views\_ViewImports.cshtml" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\BraintreeHttp-Dotnet.dll" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\logo.png" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\Nop.Plugin.Payments.PayPalSmartPaymentButtons.deps.json" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\Nop.Plugin.Payments.PayPalSmartPaymentButtons.dll" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\Nop.Plugin.Payments.PayPalSmartPaymentButtons.pdb" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\PayPalCheckoutSdk.dll" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\PayPalHttp-Dotnet.dll" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\plugin.json" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\runtimes\win-arm64\native\sni.dll" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\runtimes\win-x64\native\sni.dll" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\runtimes\win-x86\native\sni.dll" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\Source.dll" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\Views\Buttons.cshtml" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\Views\Configure.cshtml" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\Views\PaymentInfo.cshtml" />
+    <None Remove="Plugins\Payments.PayPalSmartPaymentButtons\Views\_ViewImports.cshtml" />
+    <None Remove="Plugins\Payments.PayPalStandard\logo.jpg" />
+    <None Remove="Plugins\Payments.PayPalStandard\Nop.Plugin.Payments.PayPalStandard.deps.json" />
+    <None Remove="Plugins\Payments.PayPalStandard\Nop.Plugin.Payments.PayPalStandard.dll" />
+    <None Remove="Plugins\Payments.PayPalStandard\Nop.Plugin.Payments.PayPalStandard.pdb" />
+    <None Remove="Plugins\Payments.PayPalStandard\plugin.json" />
+    <None Remove="Plugins\Payments.PayPalStandard\Views\Configure.cshtml" />
+    <None Remove="Plugins\Payments.PayPalStandard\Views\PaymentInfo.cshtml" />
+    <None Remove="Plugins\Payments.PayPalStandard\Views\_ViewImports.cshtml" />
+    <None Remove="Plugins\Pickup.PickupInStore\logo.png" />
+    <None Remove="Plugins\Pickup.PickupInStore\Nop.Plugin.Pickup.PickupInStore.deps.json" />
+    <None Remove="Plugins\Pickup.PickupInStore\Nop.Plugin.Pickup.PickupInStore.dll" />
+    <None Remove="Plugins\Pickup.PickupInStore\Nop.Plugin.Pickup.PickupInStore.pdb" />
+    <None Remove="Plugins\Pickup.PickupInStore\plugin.json" />
+    <None Remove="Plugins\Pickup.PickupInStore\Views\Configure.cshtml" />
+    <None Remove="Plugins\Pickup.PickupInStore\Views\Create.cshtml" />
+    <None Remove="Plugins\Pickup.PickupInStore\Views\Edit.cshtml" />
+    <None Remove="Plugins\Pickup.PickupInStore\Views\_CreateOrUpdate.cshtml" />
+    <None Remove="Plugins\Pickup.PickupInStore\Views\_ViewImports.cshtml" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\logo.jpg" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\Nop.Plugin.Shipping.FixedByWeightByTotal.deps.json" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\Nop.Plugin.Shipping.FixedByWeightByTotal.dll" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\Nop.Plugin.Shipping.FixedByWeightByTotal.pdb" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\plugin.json" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\Views\AddRateByWeightByTotalPopup.cshtml" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\Views\Configure.cshtml" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\Views\EditRateByWeightByTotalPopup.cshtml" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\Views\_ByWeightByTotal.cshtml" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\Views\_CreateOrUpdateRateByWeightByTotal.cshtml" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\Views\_FixedRate.cshtml" />
+    <None Remove="Plugins\Shipping.FixedByWeightByTotal\Views\_ViewImports.cshtml" />
+    <None Remove="Plugins\Shipping.ShipStation\logo.png" />
+    <None Remove="Plugins\Shipping.ShipStation\Nop.Plugin.Shipping.ShipStation.deps.json" />
+    <None Remove="Plugins\Shipping.ShipStation\Nop.Plugin.Shipping.ShipStation.dll" />
+    <None Remove="Plugins\Shipping.ShipStation\Nop.Plugin.Shipping.ShipStation.pdb" />
+    <None Remove="Plugins\Shipping.ShipStation\plugin.json" />
+    <None Remove="Plugins\Shipping.ShipStation\Views\Configure.cshtml" />
+    <None Remove="Plugins\Shipping.ShipStation\Views\_ViewImports.cshtml" />
+    <None Remove="Plugins\Shipping.UPS\logo.jpg" />
+    <None Remove="Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.deps.json" />
+    <None Remove="Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.dll" />
+    <None Remove="Plugins\Shipping.UPS\Nop.Plugin.Shipping.UPS.pdb" />
+    <None Remove="Plugins\Shipping.UPS\plugin.json" />
+    <None Remove="Plugins\Shipping.UPS\Views\Configure.cshtml" />
+    <None Remove="Plugins\Shipping.UPS\Views\_ViewImports.cshtml" />
+    <None Remove="Plugins\Tax.Avalara\Avalara.AvaTax.netstandard11.dll" />
+    <None Remove="Plugins\Tax.Avalara\logo.png" />
+    <None Remove="Plugins\Tax.Avalara\Nop.Plugin.Tax.Avalara.deps.json" />
+    <None Remove="Plugins\Tax.Avalara\Nop.Plugin.Tax.Avalara.dll" />
+    <None Remove="Plugins\Tax.Avalara\Nop.Plugin.Tax.Avalara.pdb" />
+    <None Remove="Plugins\Tax.Avalara\plugin.json" />
+    <None Remove="Plugins\Tax.Avalara\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <None Remove="Plugins\Tax.Avalara\runtimes\win-arm64\native\sni.dll" />
+    <None Remove="Plugins\Tax.Avalara\runtimes\win-x64\native\sni.dll" />
+    <None Remove="Plugins\Tax.Avalara\runtimes\win-x86\native\sni.dll" />
+    <None Remove="Plugins\Tax.Avalara\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll" />
+    <None Remove="Plugins\Tax.Avalara\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <None Remove="Plugins\Tax.Avalara\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Remove="Plugins\Tax.Avalara\Views\Checkout\AddressValidation.cshtml" />
+    <None Remove="Plugins\Tax.Avalara\Views\Configuration\Configure.cshtml" />
+    <None Remove="Plugins\Tax.Avalara\Views\Configuration\_Configuration.cshtml" />
+    <None Remove="Plugins\Tax.Avalara\Views\EntityUseCode\EntityUseCode.cshtml" />
+    <None Remove="Plugins\Tax.Avalara\Views\EntityUseCode\_EntityUseCodeField.cshtml" />
+    <None Remove="Plugins\Tax.Avalara\Views\Log\List.cshtml" />
+    <None Remove="Plugins\Tax.Avalara\Views\Log\View.cshtml" />
+    <None Remove="Plugins\Tax.Avalara\Views\Product\ExportItems.cshtml" />
+    <None Remove="Plugins\Tax.Avalara\Views\Product\_ExportItemsButton.cshtml" />
+    <None Remove="Plugins\Tax.Avalara\Views\Product\_ExportItemsForm.cshtml" />
+    <None Remove="Plugins\Tax.Avalara\Views\Tax\Categories.cshtml" />
+    <None Remove="Plugins\Tax.Avalara\Views\_ViewImports.cshtml" />
+    <None Remove="Plugins\Tax.FixedOrByCountryStateZip\logo.jpg" />
+    <None Remove="Plugins\Tax.FixedOrByCountryStateZip\Nop.Plugin.Tax.FixedOrByCountryStateZip.deps.json" />
+    <None Remove="Plugins\Tax.FixedOrByCountryStateZip\Nop.Plugin.Tax.FixedOrByCountryStateZip.dll" />
+    <None Remove="Plugins\Tax.FixedOrByCountryStateZip\Nop.Plugin.Tax.FixedOrByCountryStateZip.pdb" />
+    <None Remove="Plugins\Tax.FixedOrByCountryStateZip\plugin.json" />
+    <None Remove="Plugins\Tax.FixedOrByCountryStateZip\Views\Configure.cshtml" />
+    <None Remove="Plugins\Tax.FixedOrByCountryStateZip\Views\_CountryStateZip.cshtml" />
+    <None Remove="Plugins\Tax.FixedOrByCountryStateZip\Views\_FixedRate.cshtml" />
+    <None Remove="Plugins\Tax.FixedOrByCountryStateZip\Views\_ViewImports.cshtml" />
 
     <None Update="Areas\Admin\sitemap.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
